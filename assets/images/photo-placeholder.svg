@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141721" />
+      <stop offset="50%" stop-color="#1c202d" />
+      <stop offset="100%" stop-color="#10131c" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" />
+  
+  <!-- Subtle border pattern -->
+  <rect x="20" y="20" width="760" height="560" rx="16" fill="none" stroke="rgba(245, 158, 11, 0.2)" stroke-width="2" stroke-dasharray="8 8" />
+
+  <!-- Center Content -->
+  <g transform="translate(400, 270)">
+    <!-- Camera Icon Circle -->
+    <circle r="48" fill="rgba(245, 158, 11, 0.08)" stroke="rgba(245, 158, 11, 0.3)" stroke-width="2" />
+    
+    <!-- Camera Icon SVG -->
+    <path d="M-22 -10 L-14 -10 L-10 -18 L10 -18 L14 -10 L22 -10 C26 -10 28 -7 28 -3 L28 17 C28 21 26 24 22 24 L-22 24 C-26 24 -28 21 -28 17 L-28 -3 C-28 -7 -26 -10 -22 -10 Z" 
+          fill="none" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linejoin="round" />
+    <circle cx="0" cy="7" r="9" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" />
+    <circle cx="16" cy="-4" r="2.5" fill="#f59e0b" />
+    
+    <!-- Title -->
+    <text y="85" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#f8fafc" letter-spacing="3">
+      PHOTO COMING SOON
+    </text>
+    
+    <!-- Subtitle -->
+    <text y="115" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="13" font-weight="400" fill="rgba(248, 250, 252, 0.5)" letter-spacing="1">
+      Add your personal photo to replace this placeholder
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OUR ENGINEERING STORY — 4 Years • 4 Friends • Countless Memories</title>
+  <meta name="description" content="A cinematic documentary of our 4-year engineering journey. From strangers in the first year to family by the final year.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cinzel:wght@600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       1. NAVIGATION BAR
+       ====================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand">
+        <div class="brand-logo">
+          <img src="assets/images/logo.svg" alt="Graduation Cap & Engineering Gear Logo">
+        </div>
+        <div class="brand-text">
+          <h1 id="nav-brand-title">OUR ENGINEERING STORY</h1>
+          <span id="nav-brand-sub">4 YEARS • 4 FRIENDS</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">HOME</a></li>
+          <li><a href="#friends" class="nav-link">THE FOUR OF US</a></li>
+          <li><a href="#journey" class="nav-link">OUR JOURNEY</a></li>
+          <li><a href="#gallery" class="nav-link">MEMORIES</a></li>
+          <li><a href="#inside-jokes" class="nav-link">INSIDE JOKES</a></li>
+          <li><a href="#soundtrack" class="nav-link">SOUNDTRACK</a></li>
+          <li><a href="#campus-map" class="nav-link">COLLEGE MAP</a></li>
+          <li><a href="#awards" class="nav-link">AWARDS</a></li>
+          <li><a href="#final-chapter" class="nav-link">FINAL CHAPTER</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme, Customizer, Hamburger) -->
+      <div class="nav-actions">
+        <!-- Edit & Customize Centralized Modal Button -->
+        <button id="btn-open-customizer" class="btn-customize-badge" title="Customize website content">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+          <span>EDIT</span>
+        </button>
+
+        <!-- Theme Toggle Button -->
+        <button id="btn-theme-toggle" class="btn-icon" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <svg id="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+
+        <!-- Mobile Hamburger Menu Button -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ====================================================================
+         2. HOMEPAGE / HERO SECTION
+         ==================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="hero-background">
+        <!-- Main Hero Group Photo -->
+        <img src="photos/hero.jpg" alt="Our Engineering Group Photo at Sunset" class="hero-bg-img" id="hero-img" loading="eager" onerror="handleImageError(this, 'photos/hero.jpg')">
+        <div class="hero-overlay"></div>
+      </div>
+
+      <!-- Floating Handwritten Quotes -->
+      <div class="floating-quote top-left" style="--rot: -8deg;">Same College</div>
+      <div class="floating-quote top-right" style="--rot: 6deg;">Different Dreams</div>
+      <div class="floating-quote mid-left" style="--rot: 4deg;">Better Together</div>
+      <div class="floating-quote mid-right" style="--rot: -6deg;">Same Journey ♡</div>
+      <div class="floating-quote bottom-left" style="--rot: -4deg;">Engineering Life ♡</div>
+
+      <!-- Main Center Hero Content -->
+      <div class="hero-content">
+        <h2 class="hero-title">
+          <span>4 Years.</span>
+          <span>4 Friends.</span>
+          <span class="countless">Countless Memories.</span>
+        </h2>
+
+        <!-- Handwritten SVG underline decoration -->
+        <svg class="hero-tagline-curve" viewBox="0 0 320 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 12C90 4 230 4 316 12" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+
+        <p class="hero-subtitle" id="hero-tagline">
+          From strangers in the first year to family by the final year. ❤️
+        </p>
+
+        <!-- CTA Start Our Journey Button -->
+        <a href="#friends" class="btn-cta-journey" id="btn-start-journey">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          <span>START OUR JOURNEY</span>
+        </a>
+
+        <!-- 4 Small Circular Profile Photos with Rings -->
+        <div class="hero-friends-row" id="hero-friends-row">
+          <!-- Dynamically populated from MEMORY_DATA.friends -->
+        </div>
+      </div>
+
+      <!-- Hero Bottom Bar & Scroll Indicator -->
+      <div class="hero-bottom-bar">
+        <p class="hero-footer-note">“Not just college... it was life.”</p>
+        <a href="#friends" class="scroll-indicator">
+          <div class="mouse-icon"><div class="mouse-wheel"></div></div>
+          <span>Scroll Down</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         3. THE FOUR OF US (PROFILE CARDS)
+         ==================================================================== -->
+    <section id="friends">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">THE SQUAD</span>
+          <h2>THE FOUR OF US</h2>
+          <p>Four distinct personalities, four different chaos levels, one unbreakable brotherhood.</p>
+        </div>
+
+        <div class="friends-grid" id="friends-cards-container">
+          <!-- Rendered dynamically from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         4. OUR JOURNEY — 4 YEAR TIMELINE
+         ==================================================================== -->
+    <section id="journey">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">4-YEAR TIMELINE</span>
+          <h2>OUR JOURNEY</h2>
+          <p>Tracing every milestone from our first awkward greetings to our bittersweet farewell.</p>
+        </div>
+
+        <div class="timeline-container" id="timeline-container">
+          <div class="timeline-line"></div>
+          <!-- Rendered dynamically from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         5. MEMORY STORY CARDS ("MEMORIES WE WILL NEVER FORGET")
+         ==================================================================== -->
+    <section id="stories" style="background: rgba(16, 20, 32, 0.4);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">UNFORGETTABLE CHAPTERS</span>
+          <h2>MEMORIES WE WILL NEVER FORGET</h2>
+          <p>The defining stories and late-night adventures etched into our souls forever.</p>
+        </div>
+
+        <div class="stories-grid" id="stories-container">
+          <!-- Rendered dynamically from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         6. MEMORY GALLERY
+         ==================================================================== -->
+    <section id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">PHOTO VAULT</span>
+          <h2>MEMORY GALLERY</h2>
+          <p>Click on any photo to view in high resolution with captions and dates.</p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="gallery-filters" id="gallery-filters">
+          <!-- Rendered dynamically -->
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="gallery-container">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         7. SPECIAL MOMENTS (HORIZONTAL SCROLL)
+         ==================================================================== -->
+    <section id="moments">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">HIGHLIGHT REEL</span>
+          <h2>THE MOMENTS THAT DEFINED US</h2>
+          <p>Swipe horizontally to experience the major milestones of our college journey.</p>
+        </div>
+      </div>
+
+      <div class="moments-slider-container">
+        <div class="moments-track" id="moments-track">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         8. INSIDE JOKES SECTION ("THINGS ONLY WE UNDERSTAND 😂")
+         ==================================================================== -->
+    <section id="inside-jokes" style="background: rgba(16, 20, 32, 0.4);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">ENGINEERING HUMOR</span>
+          <h2>THINGS ONLY WE UNDERSTAND 😂</h2>
+          <p>The dialogues, crazy excuses, and inside jokes that kept us laughing through tough semesters.</p>
+        </div>
+
+        <div class="jokes-filter-row" id="jokes-filters">
+          <!-- Dynamic filter buttons -->
+        </div>
+
+        <div class="jokes-grid" id="jokes-container">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         9. COLLEGE MAP / MEMORY LOCATIONS ("PLACES THAT BECAME MEMORIES")
+         ==================================================================== -->
+    <section id="campus-map">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">CAMPUS EXPLORER</span>
+          <h2>PLACES THAT BECAME MEMORIES</h2>
+          <p>Click any glowing pin on our illustrated campus map to unlock the memories made there.</p>
+        </div>
+
+        <div class="campus-map-container" id="campus-map-container">
+          <img src="assets/images/campus-map.jpg" alt="Illustrated Engineering College Campus Map" class="campus-map-img">
+          <!-- Interactive map pins will be placed dynamically -->
+          <div id="map-pins-layer"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         10. ENGINEERING LIFE AWARDS 😂
+         ==================================================================== -->
+    <section id="awards" style="background: rgba(16, 20, 32, 0.4);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">HALL OF FAME</span>
+          <h2>ENGINEERING LIFE AWARDS 🏆</h2>
+          <p>Because surviving four years of engineering deserves some unconventional recognition.</p>
+        </div>
+
+        <div class="awards-grid" id="awards-container">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         11. OUR SOUNDTRACK ("THE SOUNDTRACK OF OUR ENGINEERING LIFE 🎵")
+         ==================================================================== -->
+    <section id="soundtrack">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">MUSIC OF 4 YEARS</span>
+          <h2>THE SOUNDTRACK OF OUR ENGINEERING LIFE 🎵</h2>
+          <p>The anthems that played through hostel corridors, canteen speakers, and midnight road trips.</p>
+        </div>
+
+        <div class="soundtrack-wrapper">
+          <div class="soundtrack-grid">
+            <!-- Vinyl Turntable Player -->
+            <div class="vinyl-player-deck">
+              <div class="vinyl-disc-container">
+                <img src="assets/images/music-cover-1.svg" alt="Soundtrack Vinyl Disc" class="vinyl-disc" id="current-vinyl">
+              </div>
+
+              <!-- Animated Sound Wave Equalizer -->
+              <div class="sound-waves">
+                <div class="sound-bar"></div>
+                <div class="sound-bar"></div>
+                <div class="sound-bar"></div>
+                <div class="sound-bar"></div>
+                <div class="sound-bar"></div>
+                <div class="sound-bar"></div>
+                <div class="sound-bar"></div>
+              </div>
+
+              <h3 id="current-song-title" style="font-family: var(--font-serif); font-size: 1.25rem; margin-bottom: 4px;">Iktara / Give Me Some Sunshine</h3>
+              <p id="current-song-artist" style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 14px;">Amit Trivedi / Swanand Kirkire</p>
+
+              <!-- Controls -->
+              <div class="player-controls">
+                <button class="btn-icon" id="btn-prev-track" title="Previous Track">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="19 20 9 12 19 4 19 20"></polygon><line x1="5" y1="19" x2="5" y2="5" stroke="currentColor" stroke-width="3"></line></svg>
+                </button>
+                <button class="btn-play-pause" id="btn-play-pause" title="Play or Pause">
+                  <svg id="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  <svg id="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+                </button>
+                <button class="btn-icon" id="btn-next-track" title="Next Track">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 4 15 12 5 20 5 4"></polygon><line x1="19" y1="5" x2="19" y2="19" stroke="currentColor" stroke-width="3"></line></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Track List -->
+            <div class="track-list" id="track-list-container">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         12. VIDEO MEMORIES ("MEMORIES IN MOTION 🎥")
+         ==================================================================== -->
+    <section id="videos" style="background: rgba(16, 20, 32, 0.4);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">CINEMATIC CLIPS</span>
+          <h2>MEMORIES IN MOTION 🎥</h2>
+          <p>Relive the vlogs, project demonstrations, trip highlights, and farewell celebrations.</p>
+        </div>
+
+        <div class="videos-grid" id="videos-container">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         13. QUOTE WALL ("WORDS WE'LL REMEMBER")
+         ==================================================================== -->
+    <section id="quotes">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">WORDS OF BROTHERHOOD</span>
+          <h2>WORDS WE'LL REMEMBER</h2>
+          <p>Wisdom, jokes, and sentiments spoken across four unforgettable years.</p>
+        </div>
+
+        <div class="quote-wall-grid" id="quotes-container">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         14. THE FINAL CHAPTER
+         ==================================================================== -->
+    <section class="final-chapter-section" id="final-chapter">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">THE CONCLUSION</span>
+          <h2>THE FINAL CHAPTER</h2>
+          <p>When the bells stopped ringing and the numbers added up to forever.</p>
+        </div>
+
+        <!-- 4-Year Stats Grid -->
+        <div class="final-stats-grid" id="final-stats-container">
+          <!-- Rendered dynamically (Days, Weeks, Months, Memories, Friends) -->
+        </div>
+
+        <!-- Narrative Block -->
+        <div class="final-narrative-block">
+          <div class="final-headline-1" id="final-headline-1">Engineering ended.</div>
+          <div class="final-headline-2" id="final-headline-2">But our story didn't.</div>
+          <p class="final-story-text" id="final-story-text">
+            From the first day to the final goodbye, every exam panic, every cutting chai, every late-night coding breakthrough, and every road trip became a part of our story. We didn't just survive engineering; we made it legendary.
+          </p>
+        </div>
+
+        <!-- Replay Our Story Button -->
+        <a href="#home" class="btn-replay" id="btn-replay-story">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><polyline points="3 3 3 8 8 8"></polyline></svg>
+          <span>REPLAY OUR STORY ❤️</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         15. FINAL FULLSCREEN PHOTO / TRIBUTE
+         ==================================================================== -->
+    <section class="finale-tribute-section" id="farewell-tribute">
+      <div class="finale-bg">
+        <img src="photos/final.jpg" alt="Final Graduation Photo" id="finale-img" onerror="handleImageError(this, 'photos/final.jpg')">
+        <div class="finale-overlay"></div>
+      </div>
+
+      <div class="finale-content">
+        <h2 class="finale-quote-large" id="finale-quote">
+          Some chapters end.<br>The memories don't.
+        </h2>
+        <p class="finale-grateful" id="finale-grateful">
+          “Forever grateful for these four years.”
+        </p>
+        <div class="finale-names-row" id="finale-names-row">
+          <!-- Akash • Friend 2 • Friend 3 • Friend 4 -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       16. FOOTER
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand">
+        <h2 id="footer-site-title">OUR ENGINEERING STORY</h2>
+        <p id="footer-tagline">4 Years • 4 Friends • Countless Memories</p>
+      </div>
+
+      <!-- Social Links -->
+      <div class="footer-social-links" id="footer-social-links">
+        <a href="#" class="social-link-btn" title="Instagram" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+        <a href="#" class="social-link-btn" title="YouTube" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+        </a>
+        <a href="#" class="social-link-btn" title="WhatsApp" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+        </a>
+        <a href="#" class="social-link-btn" title="Email" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </a>
+      </div>
+
+      <p class="footer-copy">
+        Made with ❤️ by <strong id="footer-author">Akash & Friends</strong> • Class of <span id="footer-batch">2026</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       17. MODALS
+       ====================================================================== -->
+
+  <!-- Lightbox Modal -->
+  <div class="modal-backdrop" id="lightbox-modal">
+    <div class="modal-container" style="max-width: 900px;">
+      <button class="modal-close-btn" id="lightbox-close" aria-label="Close photo preview">✕</button>
+      <div class="lightbox-content">
+        <div class="lightbox-image-wrap">
+          <img src="" alt="High resolution preview" id="lightbox-img">
+          <div class="lightbox-controls">
+            <button class="lightbox-btn" id="lightbox-prev" aria-label="Previous photo">❮</button>
+            <button class="lightbox-btn" id="lightbox-next" aria-label="Next photo">❯</button>
+          </div>
+        </div>
+        <div class="lightbox-caption-bar">
+          <h3 id="lightbox-title">Photo Title</h3>
+          <p id="lightbox-caption">Photo caption text</p>
+          <div class="lightbox-footer-info">
+            <span id="lightbox-date">📅 Date</span>
+            <span id="lightbox-location">📍 Location</span>
+            <span id="lightbox-people">👥 People</span>
+            <a href="#" id="lightbox-download-link" target="_blank" style="color: var(--accent-gold-light); text-decoration: underline;" download>Open Original</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Friend Profile Modal -->
+  <div class="modal-backdrop" id="friend-modal">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="friend-modal-close" aria-label="Close friend profile">✕</button>
+      <div class="friend-modal-body" id="friend-modal-content">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Campus Location Detail Modal -->
+  <div class="modal-backdrop" id="location-modal">
+    <div class="modal-container" style="max-width: 580px;">
+      <button class="modal-close-btn" id="location-modal-close" aria-label="Close location detail">✕</button>
+      <div style="padding: 28px;" id="location-modal-content">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Video Player Modal -->
+  <div class="modal-backdrop" id="video-modal">
+    <div class="modal-container" style="max-width: 820px; background: #000;">
+      <button class="modal-close-btn" id="video-modal-close" aria-label="Close video player">✕</button>
+      <div style="padding: 20px;" id="video-player-container">
+        <!-- Video element or embed inserted dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Centralized In-Browser Customizer / Edit Modal -->
+  <div class="modal-backdrop" id="customizer-modal">
+    <div class="modal-container" style="max-width: 780px;">
+      <button class="modal-close-btn" id="customizer-close" aria-label="Close customizer">✕</button>
+      <div class="customizer-body">
+        <h2>✏️ Personal Story Customizer</h2>
+        <p>Edit names, quotes, titles, and dates easily right in your browser. Changes save instantly to your browser storage, and you can export an updated <code>data.js</code> file anytime!</p>
+        
+        <div class="customizer-tabs" id="customizer-tabs">
+          <button class="customizer-tab-btn active" data-tab="general">General & Names</button>
+          <button class="customizer-tab-btn" data-tab="friends">The 4 Friends</button>
+          <button class="customizer-tab-btn" data-tab="timeline">Years & Timeline</button>
+          <button class="customizer-tab-btn" data-tab="quotes">Quotes & Final</button>
+        </div>
+
+        <div id="customizer-tab-content">
+          <!-- Form fields dynamically rendered based on active tab -->
+        </div>
+
+        <div class="customizer-actions">
+          <button class="btn-secondary" id="btn-reset-data">Reset to Default</button>
+          <button class="btn-secondary" id="btn-export-data">Download data.js</button>
+          <button class="btn-primary" id="btn-save-customizer">Save & Apply Changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audio Element for Soundtracks -->
+  <audio id="soundtrack-audio" preload="none"></audio>
+
+  <!-- Load Centralized Configuration First -->
+  <script src="data.js"></script>
+
+  <!-- Main Application Script -->
+  <script src="app.js"></script>
+</body>
+</html>
